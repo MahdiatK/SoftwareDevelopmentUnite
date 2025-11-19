@@ -262,3 +262,11 @@ Lightweight app that works smoothly on mobile devices.
 
 # <ins> High-Level Functional Specifications <ins/>
 
+# Minimum Hardware Requirements
+ - Android OS 5.0 / iOS 15
+ - At least 1GB RAM
+ - Around 300MB free storage
+ - A stable internet connection
+
+# Application Functions
+ - 
