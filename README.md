@@ -269,3 +269,13 @@ Lightweight app that works smoothly on mobile devices.
 
 # Application Functions
  - 
+
+
+
+
+
+
+
+
+
+# <ins> High-Level non-Functional Specifications <ins/>
