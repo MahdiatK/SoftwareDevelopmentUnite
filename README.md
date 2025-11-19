@@ -1,6 +1,25 @@
 # <p align=center> [Software-Devlopment-ChatApp / Daniel, Sayf and Mahdiat](https://placehold.it/150/ffffff/ff0000?text=hello) </p>
 
   # <ins> Reviewing Available Projects <ins/>
+## Hangman
+A simple, GUI multiplater game where players take turns guessing letters to reveal a hidden word, with ach incorrect guess adding to a 'hangman' drawing.
+
+Target audience;
+- This will be catered towards students, casual gamers or anyone looking for a quick game that they can play with a group of people
+
+Considerations;
+- difficulty level, simple, intuitive gameplay
+- platform, likely to be played on desktop or mobile
+- Multiplater, it would require syncing between players and managing turn taking on the game
+
+Pros;
+- Easy to implement and can be made with simple graphics
+- Fun for all ages
+
+Cons;
+- Could get repetivie, may need to add creative elements to make it fresh
+- May require extensive html, java code to make it look aesthetically pleasing and futuristic
+
 ## Hide and seek
 Players can hide either objects or their avatars within a game mode, while another player (team) tries to find them. 
 
