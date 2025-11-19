@@ -1,4 +1,6 @@
-# <p align=center> [Software-Devlopment-ChatApp / Daniel, Sayf and Mahdiat](https://placehold.it/150/ffffff/ff0000) </p>
+# <p align=center> [Software-Devlopment-ChatApp](https://placehold.it/150/ffffff/ff0000) </p>
+
+<img width="1024" height="218" alt="image" src="https://github.com/user-attachments/assets/6e5fcdc3-3477-4cd8-a2bf-b6d7d500b18a" />
 
   # <ins> Reviewing Available Projects <ins/>
 ## Hangman
