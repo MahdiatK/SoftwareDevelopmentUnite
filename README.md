@@ -214,8 +214,14 @@ The project is deemed successful if;
 # <ins> User Profile 1 — Emily (Mother and Casual Tech User) <ins/>
 
 Age: 42
-Occupation: Part-time administrator
+
+
+Occupation: Teacher
+
+
 Technical Skill Level: Basic to moderate
+
+
 Family Role: Mother, regularly communicates with extended family
 
 # Wants & Needs:
@@ -233,8 +239,14 @@ Ability to create small group chats.
 # <ins> User Profile 2 — Liam (Teenager and Social Communicator) <ins/>
 
 Age: 16
+
+
 Occupation: Student
+
+
 Technical Skill Level: High
+
+
 Family Role: Son, active in social circles
 
 # Wants & Needs:
