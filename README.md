@@ -8,8 +8,8 @@ Target audience;
 - This will be catered towards students, casual gamers or anyone looking for a quick game that they can play with a group of people
 
 Considerations;
-- difficulty level, simple, intuitive gameplay
-- platform, likely to be played on desktop or mobile
+- Difficulty level, simple, intuitive gameplay
+- Platform, likely to be played on desktop or mobile
 - Multiplater, it would require syncing between players and managing turn taking on the game
 
 Pros;
@@ -33,10 +33,10 @@ Considerations;
 
 Pros;
 - Other a variatey of ways to play the game
-- -encourages creativity in how players of the game design their hiding spots
+- Encourages creativity in how players of the game design their hiding spots
 
 Cons;
-- development could be more complex, especially if good graphics needed
+- Development could be more complex, especially if good graphics needed
 - Might appeal to a narrower audience 
 
 ## Chat App
@@ -63,38 +63,36 @@ Cons;
 As any software project goes, it's essential to plan and build around an intended target audience. For the chosen project of building functioning mobile-ready Chat App, there are multiple possible target audiences to consider from:
 
 ## Family and Friends
- <ins> CHARACTERISTICS: <ins/>
+CHARACTERISTICS;
 
+- Prefer a simple, friendly interface
 
-Prefer a simple, friendly interface
+- Lightweight features
 
-Lightweight features
-
-Primarily mobile based usage
+- Primarily mobile based usage
 
 
 ## Students
- <ins> CHARACTERISTICS: <ins/>
+CHARACTERISTICS;
 
 
-Use messaging apps daily
+- Use messaging apps daily
 
-Need fast, simple communication
+- Need fast, simple communication
 
-Often collaborate in virtual spaces
+- Often collaborate in virtual spaces
 
-Appeals to engaging, intuitive UI
+- Appeals to engaging, intuitive UI
 
 
 ## Workforce Teams
- <ins> CHARACTERISTICS: <ins/>
+CHARACTERISTICS;
 
+- Need reliability and message persistence
 
-Need reliability and message persistence
+- May need channels, tagging, or file exchange
 
-May need channels, tagging, or file exchange
-
-Values security
+- Values security
 
 
 # <ins> Intended Primary Target Audience <ins/>
