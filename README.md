@@ -237,7 +237,7 @@ Occupation: Student
 Technical Skill Level: High
 Family Role: Son, active in social circles
 
-Wants & Needs:
+# Wants & Needs:
 
 Fast, responsive chat system for quick texting.
 
