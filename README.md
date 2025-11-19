@@ -109,7 +109,6 @@ The project will be completed with casual use in mind, for families and friends 
 # System Requirements
 Functional Requirements;
 - The system must store user accounts (username, password hash, profile info)
-- The system must transmit messages between users via a server
 - The system must store messages with timestamps
 - The system must update all connected clients in real time when a new message is sent
 - The system must allow creation of multiple chat rooms
@@ -121,6 +120,7 @@ Functional Requirements;
 - Reliability, Server uptime should be above 99%
 - Scalability, Support a minimum of 100 concurrent users
 - Compatibility, Work across desktop and mobile browsers (responsive design).
+
 # Human–Computer Interaction (HCI) Requirements
 Interface Layout;
 - Clean, minimalistic UI
@@ -154,9 +154,8 @@ Games rules;
 - Muted users’ messages will not be shown to the muting user
 
 # System Mechanics
-- When a message is sent, the server verifies sender identity, stores message in the database, and broadcasts to all users in the room
 - Users are marked online when authenticated and connected; offline when disconnected
-- Users may join or leave rooms. When joining, the last X messages are loaded from history
+- Users may join or leave rooms, When joining, the last X messages are loaded from history
 
 # Notifications appear when;
 - a new message arrives
@@ -280,3 +279,15 @@ Lightweight app that works smoothly on mobile devices.
 
 
 # <ins> High-Level non-Functional Specifications <ins/>
+
+# Aesthetics
+
+
+# Usabillity 
+
+
+# Ease of use
+
+
+# Feedback style
+
