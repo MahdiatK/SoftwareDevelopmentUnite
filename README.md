@@ -98,6 +98,6 @@ Values security
 
 
 # <ins> Intended Primary Target Audience <ins/>
+## Family and Friends
 
-  
-
+The Chat App will be primarily designed with simplicity and usability in mind, for families and friends who need a convenient way to stay connected. This audience will be valuing ease of use, quick message delivery, and an interface that is intuitive and widely accessible. By targeting users who prefer casual personal communication over professional or high demand services, the project can focus on core messaging without requiring more complex functionalities such as team-based environments. This makes the project fall under a realistic and achievable scope of work.
