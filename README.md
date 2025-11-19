@@ -63,35 +63,22 @@ Cons;
 As any software project goes, it's essential to plan and build around an intended target audience. For the chosen project of building functioning mobile-ready Chat App, there are multiple possible target audiences to consider from:
 
 ## Family and Friends
-CHARACTERISTICS;
-
+Chacteristics;
 - Prefer a simple, friendly interface
-
 - Lightweight features
-
 - Primarily mobile based usage
 
-
 ## Students
-CHARACTERISTICS;
-
-
+Chacteristics;
 - Use messaging apps daily
-
 - Need fast, simple communication
-
 - Often collaborate in virtual spaces
-
 - Appeals to engaging, intuitive UI
 
-
 ## Workforce Teams
-CHARACTERISTICS;
-
+Chacteristics;
 - Need reliability and message persistence
-
 - May need channels, tagging, or file exchange
-
 - Values security
 
 
