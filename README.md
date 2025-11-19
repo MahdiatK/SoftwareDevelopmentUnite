@@ -1,4 +1,4 @@
-# <p align=center> [Software-Development-ChatApp](https://placehold.it/150/ffffff/ff0000) </p>
+# <p align=center> [Software-Development-Unite](https://placehold.it/150/ffffff/ff0000) </p>
 
 <img width="1024" height="218" alt="image" src="https://github.com/user-attachments/assets/6e5fcdc3-3477-4cd8-a2bf-b6d7d500b18a" />
 
