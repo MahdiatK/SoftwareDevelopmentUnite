@@ -117,11 +117,10 @@ Functional Requirements;
 - The system must prevent unauthorised access through authentication
 
 # Non-Functional Requirements
-- Performance: Messages should appear for all users in under 1 second
-- Reliability: Server uptime should be above 99%
-- Scalability: Support a minimum of 100 concurrent users
-- Security: Passwords stored using hashing; all communication encrypted
-- Compatibility: Work across desktop and mobile browsers (responsive design).
+- Performance, Messages should appear for all users in under 1 second
+- Reliability, Server uptime should be above 99%
+- Scalability, Support a minimum of 100 concurrent users
+- Compatibility, Work across desktop and mobile browsers (responsive design).
 # Human–Computer Interaction (HCI) Requirements
 Interface Layout;
 - Clean, minimalistic UI
