@@ -46,6 +46,16 @@ Often collaborate in virtual spaces
 Appeals to engaging, intuitive UI
 
 
+## Workforce Teams
+ <ins> CHARACTERISTICS: <ins/>
+
+
+Need reliability and message persistence
+
+May need channels, tagging, or file exchange
+
+Values security
+
 
   
 
