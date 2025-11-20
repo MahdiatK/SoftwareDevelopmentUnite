@@ -415,5 +415,5 @@ If a message can't be sent due to connectivity issues, users should receive a no
 # Database design problems
 - Poor schema choices, this could result in slow message retrieval or lost messages
 
-#Limited deployment knowledge
+# Limited deployment knowledge
 - Possible difficulty deploying servers, this could lead to deployment errors making the system unusable
