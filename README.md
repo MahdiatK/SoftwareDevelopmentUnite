@@ -367,9 +367,9 @@ If a message can't be sent due to connectivity issues, users should receive a no
 
 ***FINAL MOCKUPS FROM MAHDIAT***
 
-<img width="395" height="687" alt="image" src="https://github.com/user-attachments/assets/51a00c4c-e667-421e-8215-0aceb69a9c54" />
+<img width="408" height="775" alt="image" src="https://github.com/user-attachments/assets/3d42b076-8bae-4080-9011-520fb1b74dcb" />
 
-<img width="355" height="690" alt="image" src="https://github.com/user-attachments/assets/9f5cbc9b-c500-4a13-9e1f-ed8a01003bb1" />
+<img width="409" height="773" alt="image" src="https://github.com/user-attachments/assets/336f2af1-60e6-4740-ac90-19034a9ae3fc" />
 
 <img width="981" height="701" alt="image" src="https://github.com/user-attachments/assets/590036b4-2d7d-456b-9f6a-1ea8ccf7d7f0" />
 
