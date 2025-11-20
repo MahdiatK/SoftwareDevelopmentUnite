@@ -380,9 +380,9 @@ If a message can't be sent due to connectivity issues, users should receive a no
 
 <img width="409" height="248" alt="image" src="https://github.com/user-attachments/assets/7b4e22fb-8e71-4621-a134-b5c3c60b9ad1" />
 
-<img width="366" height="675" alt="image" src="https://github.com/user-attachments/assets/9f68b7c8-9783-4e14-ae00-7af832c18621" />
-
 <img width="838" height="575" alt="image" src="https://github.com/user-attachments/assets/dd8f488a-2fc7-4acf-b3d8-b9b6214f22ce" />
+
+<img width="366" height="675" alt="image" src="https://github.com/user-attachments/assets/9f68b7c8-9783-4e14-ae00-7af832c18621" />
 
 # ***FINAL MOCKUPS FROM DANIEL/storyboard***
 
