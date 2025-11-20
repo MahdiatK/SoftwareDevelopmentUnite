@@ -391,3 +391,29 @@ If a message can't be sent due to connectivity issues, users should receive a no
 <img width="299" height="588" alt="image" src="https://github.com/user-attachments/assets/10306ed2-966d-41b0-a10f-e490306e58ee" />
 
 <img width="857" height="621" alt="image" src="https://github.com/user-attachments/assets/c0622307-1854-44d0-af0e-cda4774fb48a" />
+
+## Potential Project Risks
+
+#Technical arcitecture
+- The app may not be designed to handle multiple users simultaneously texting, this could lead to crashes, message delays or loss of messages.
+
+#Real tiime communication
+- Real time messaging protocols may exceed the teams technical familiarity, we have to research alot of these protocols before we can use them, poor implementation can lead to unreliable communication.
+
+#Testing and quality assurance
+- Inadequate unit testing, increases amount of bugs, slow development
+
+#Security vulnerabilities 
+- Week authentication, unsafe message storage, Chat apps deal with sensitive user information so security flaws can compromise user trust and violate regulations
+
+#Api dependancies
+- Reliance on hosted cloud services, outages or deprecations can break and slow down the apps features leading to unhappy customers
+
+#Integration between front and backend
+- Mismatched data formats, incosistent API behaviour, miscomunnication, these all can lead to core feaatures breaking or behaving unpredicitably
+
+# Database design problems
+- Poor schema choices, this could result in slow message retrieval or lost messages
+
+#Limited deployment knowledge
+- Possible difficulty deploying servers, this could lead to deployment errors making the system unusable
