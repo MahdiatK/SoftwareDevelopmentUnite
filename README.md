@@ -549,3 +549,5 @@ To develop the app we chose to use Flutter framework and Cloud Firestore (Fireba
 To use both of these we had to learn the basics and used the following websites:
 - https://codelabs.developers.google.com/codelabs/flutter-codelab-first#1
 - https://firebase.google.com/docs/firestore?_gl=1*12ydv1y*_up*MQ..*_ga*MTU4MTYyNTQxMS4xNzY1MTMyMjEw*_ga_CW55HF8NVT*czE3NjUxMzIyMDkkbzEkZzAkdDE3NjUxMzIyMDkkajYwJGwwJGgw
+I used the following youtube channel called Mitch Koko to help me with flutter and he has alot of tutoral videos:
+- https://www.youtube.com/@createdbykoko
