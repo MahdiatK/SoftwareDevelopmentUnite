@@ -408,7 +408,7 @@ If a message can't be sent due to connectivity issues, users should receive a no
 # Technical arcitecture #
 - The app may not be designed to handle multiple users simultaneously texting, this could lead to crashes, message delays or loss of messages.
 
-# Real tiime communication #
+# Real time communication #
 - Real time messaging protocols may exceed the teams technical familiarity, we have to research alot of these protocols before we can use them, poor implementation can lead to unreliable communication.
 
 # Testing and quality assurance #
