@@ -1,20 +1,38 @@
-import 'package:unity_main/brightness/light_mode.dart';
 import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class LoginPage extends StatelessWidget {
+    const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,  //This makes the program not show the debug banner when testing/running
-      home: LoginPage(),                  //App begins on the login page
-      theme: lightMode,
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
+      body:Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //Unity Logo
+            Image.network(
+              'https://i.postimg.cc/GtXyJgkf/Unity-Logo.png',
+              height: 150,
+            ),
+
+            const SizedBox(height: 50),
+
+            //Welcome back message
+            Text(
+              "WELCOME BACK",
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.primary,
+                fontSize: 16,
+              ),
+            ),
+
+            //Username field
+
+          ],
+        ),
+      ),
     );
   }
 }
