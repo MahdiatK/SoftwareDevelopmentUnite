@@ -1,6 +1,7 @@
 import 'package:unity_main/brightness/light_mode.dart';
 import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
+import 'auth/login_or_register.dart';
+
 
 void main() {
   runApp(const MainApp());
@@ -18,3 +19,4 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+
