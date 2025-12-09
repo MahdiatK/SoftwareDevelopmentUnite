@@ -4,10 +4,15 @@ import '../components/my_button.dart';
 import '../components/my_textfield.dart';
 
 class RegisterPage extends statelessWidget {
+   // username and pw controllers
    final TextEditingController _usernameController = TextEditingController();
    final TextEditingController _pwController = TextEditingController();
+   final TextEditingController _confirmpwController = TextEditingController();
   
   RegisterPage({super.key});
+
+  // register method
+  void register() {}
 
   @override
   widget build(BuildContext context) {
@@ -27,7 +32,7 @@ class RegisterPage extends statelessWidget {
 
             //Welcome back message
             Text(
-              "WELCOME BACK",
+              "Let's create an account for you",
               style: TextStyle(
                 color: Theme.of(context).colorScheme.inversePrimary,
                 fontSize: 16,
@@ -52,12 +57,21 @@ class RegisterPage extends statelessWidget {
                controller: _pwController,
             ),
 
+              const SizedBox(height: 10),
+
+            // Confirm Password field
+             MyTextField(
+               hintText: "Confirm password",
+               obscureText: true,
+               controller: _confirmpwController,
+            ),
+
             const SizedBox(height: 25),
 
             // login button
             MyButton(
-              text: "Login",
-              onTap: login,
+              text: "Register",
+              onTap: register,
             ),
 
             const SizedBox(height: 25),
@@ -66,12 +80,12 @@ class RegisterPage extends statelessWidget {
             Row(
               mainAxisAlignment: MainAxis Alignment.center,
               children:
-                Text("Not a member?"),
+                Text("Already have an account?"),
                 style: 
                     TextStyle(colour: Theme.of(context).colourScheme.primary),
                ), // Text
                Text(
-                 "Register now", 
+                 "Login now", 
                  style: Textstyle(
                    fontWeight: FontWeight.bold,
                    colour: Theme.of(context).colourScheme.primary),
