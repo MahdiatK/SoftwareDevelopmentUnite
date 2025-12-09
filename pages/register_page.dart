@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../components/my_button.dart';
+import '../components/my_textfield.dart';
+
 class RegisterPage extends statelessWidget {
-  const RegisterPage({super.key});
+   final TextEditingController _usernameController = TextEditingController();
+   final TextEditingController _pwController = TextEditingController();
+  
+  RegisterPage({super.key});
 
   @override
   widget build(BuildContext context) {
