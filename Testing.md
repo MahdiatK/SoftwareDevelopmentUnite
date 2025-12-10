@@ -13,3 +13,8 @@ In development faced alot of comon errors in indentation adn parenthesis these a
 This issue was fixed to allow the app to run, the changes i made was to change the position of the parenthesis it had to be on the same line as the color scheme primary code,
 Also i made the code more neat and readable, fixing some of the indentation here is the fixed version:
 - <img width="737" height="551" alt="image" src="https://github.com/user-attachments/assets/1b8e303a-2a34-4c80-aa5d-c6a11bfe7a9a" />
+
+
+In the development we wanted to you usernames as a way for the user to login, however when it came to the data section firefox would only allow us to use email instead of username for when users sign up
+
+<img width="965" height="747" alt="image" src="https://github.com/user-attachments/assets/f71ad544-66ae-4a78-b06a-0d678a6b6bad" />
