@@ -4,7 +4,7 @@ import 'package:unity_main/components/my_button.dart';
 
 class RegisterPage extends StatelessWidget {
    //Username and pw controllers
-   final TextEditingController _usernameController = TextEditingController();
+   final TextEditingController _emailController = TextEditingController();
    final TextEditingController _pwController = TextEditingController();
    final TextEditingController _confirmpwController = TextEditingController();
 
@@ -45,9 +45,9 @@ class RegisterPage extends StatelessWidget {
 
             //Username field
             MyTextField(
-              hintText: "Username",
+              hintText: "email",
               obscureText: false,
-              controller: _usernameController,
+              controller: _emailController,
             ), 
 
             const SizedBox(height: 10),
