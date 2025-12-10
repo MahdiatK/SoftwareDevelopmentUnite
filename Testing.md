@@ -18,3 +18,4 @@ Also i made the code more neat and readable, fixing some of the indentation here
 In the development we wanted to you usernames as a way for the user to login, however when it came to the data section firefox would only allow us to use email instead of username for when users sign up
 
 <img width="965" height="747" alt="image" src="https://github.com/user-attachments/assets/f71ad544-66ae-4a78-b06a-0d678a6b6bad" />
+<img width="585" height="250" alt="username" src="https://github.com/user-attachments/assets/d97e2fe1-1a45-4d27-95f6-60569b73475a" />
