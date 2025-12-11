@@ -1,6 +1,8 @@
 # Unity Chat App
 Mobile chat application built using Flutter and Firebase (Cloud Firestore).
 
+---
+
 <p align="center">
   <img width="200" src="https://i.postimg.cc/GtXyJgkf/Unity-Logo.png">
 </p>
