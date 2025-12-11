@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:unity_main/components/my_drawer.dart';
 import 'package:unity_main/services/auth/auth_service.dart';
 import 'package:unity_main/services/chat/chat_service.dart';
+import '../components/user_tile.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -55,8 +56,19 @@ class HomePage extends StatelessWidget {
   }
   
   // build  individual list tile for user
-  Widget _buildUserListItem(Map<String, dynamnic> userData, BuildContext context) {
+  Widget _buildUserListItem(Map<String, dynamic> userData, BuildContext context) {
     //display all users except current user
-    return UserTile(); 
+    return UserTile(
+      text: userData["email"],
+      onTap: () {
+        // tapped on a user -> go to chat page
+        Navigator.push
+        (context,
+          MaterialPageRoute(
+            builder: (context) => ChatPage(),
+          )
+        );
+      },
+    ); 
   }
 }
