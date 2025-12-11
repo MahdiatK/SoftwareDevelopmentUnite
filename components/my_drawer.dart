@@ -8,14 +8,17 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.background,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          //logo
-          DrawerHeader(
-            child: Center(
-              child:Icon(
-                Icons.message, 
-                color: Theme.of(context).colorScheme.primary,
-                size: 40,
+          Column(
+            children: [
+              //logo
+              DrawerHeader(
+              child: Center(
+                child:Icon(
+                  Icons.message, 
+                  color: Theme.of(context).colorScheme.primary,
+                  size: 40,
             ),
           ),
        ),
@@ -38,7 +41,7 @@ class MyDrawer extends StatelessWidget {
               leading: const Icon(Icons.settings),
               onTap: () {},
             ),
-          ),
+          ),],),
 
           //logout list tile
           Padding(
@@ -54,5 +57,3 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
-
-
