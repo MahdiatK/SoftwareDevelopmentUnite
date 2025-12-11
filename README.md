@@ -1,5 +1,5 @@
 # Unity Chat App
-Mobile chat application built using Flutter and Firebase (Cloud Firestore).
+A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 
 ---
 
