@@ -468,11 +468,11 @@ function createGroupChat(creatorID, memberList):
 ---
 
 # References
+To develop the app we chose to use Flutter framework and Cloud Firestore (Firebase). The flutter framework is essential to build the mobile app’s interface and logic for both Android and iOS from a single codebase. And Firestore is essential to store user data, messages, and real-time updates. To use both of these we had to learn the basics and used the following websites:
 
-To develop the app we chose to use Flutter framework and Cloud Firestore (Firebase)...
+https://codelabs.developers.google.com/codelabs/flutter-codelab-first#1
+https://firebase.google.com/docs/firestore?_gl=1*12ydv1y*_up*MQ..*_ga*MTU4MTYyNTQxMS4xNzY1MTMyMjEw*_ga_CW55HF8NVT*czE3NjUxMzIyMDkkbzEkZzAkdDE3NjUxMzIyMDkkajYwJGwwJGgw
+https://docs.flutter.dev/get-started/quick
 
-- https://codelabs.developers.google.com/codelabs/flutter-codelab-first#1  
-- https://firebase.google.com/docs/firestore  
-- https://docs.flutter.dev/get-started/quick  
-- https://www.youtube.com/@createdbykoko  
-
+I used the following youtube channel called Mitch Koko to help me with flutter and he has alot of tutoral videos:
+https://www.youtube.com/@createdbykoko
