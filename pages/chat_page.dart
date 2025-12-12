@@ -43,6 +43,7 @@ class ChatPage extends StatelessWidget {
         ),
 
         //display the users input
+        _buildUserInput(),
       ]),
     );
   }
@@ -93,7 +94,9 @@ class ChatPage extends StatelessWidget {
           ),
 
           // send button
-          IconButton(onPressed: sendMessage, icon: Icon(Icons.arrow_upward),
+          IconButton(
+            onPressed: sendMessage,
+            icon: const Icon(Icons.arrow_upward),
           ),
         ],
       );
