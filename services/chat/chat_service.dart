@@ -1,9 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:unity_main/models/message.dart';
 
 class ChatService {
 
-// get instance of firestore
+// get instance of firestore and auth
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+final FirebaseAuth _auth = FirebaseAuth.instance;
 
 // get user stream
 /*
@@ -35,7 +38,33 @@ Stream<List<Map<String, dynamic>>>  getUsersStream() {
 }
 
 // send message
+Future<void> sendMessage(String receiverID, message) async {
+  // get current user info
+  final String currentUserID = _auth.currentUser!.uid;
+  final String currentUserEmail = _auth.currentUser!.email!;
+  final Timestamp timestamp = Timestamp.now();
 
+  // create a new message
+  Message newMessage = Message(
+    senderID: currentUserID,
+    senderemail: currentUserEmail,
+    receiverID: receiverID,
+    message: message,
+    timestamp: timestamp,
+  );
+
+  //construct a chatroom ID for these two users (sorted to ensure uniqueness))
+  List<String> ids = [currentUserID, receiverID];
+  ids.sort(); //sort the ids (ensures the chat id is same for two people)
+  String chatRoomID = ids.join("_"); // join with underscore
+
+  //add new message to database
+  await _firestore
+      .collection("ChatRooms")
+      .doc(chatRoomID)
+      .collection("Messages")
+      .add(newMessage.toMap());
+}
 // get messages
 
 }
