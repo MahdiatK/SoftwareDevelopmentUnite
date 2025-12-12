@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:unity_main/components/my_drawer.dart';
-import 'package:unity_main/services/auth/auth_service.dart';
 import 'package:unity_main/services/chat/chat_service.dart';
-import '../components/user_tile.dart';
-import 'chat_page.dart';
+import 'package:unity_main/components/user_tile.dart';
+import 'package:unity_main/pages/chat_page.dart';
+import 'package:unity_main/services/auth/auth_service.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -61,6 +61,7 @@ class HomePage extends StatelessWidget {
   // build  individual list tile for user
   Widget _buildUserListItem(Map<String, dynamic> userData, BuildContext context) {
     //display all users except current user
+   if (userData["email"] != _authService.currentUser!.email) {
     return UserTile(
       text: userData["email"],
       onTap: () {
@@ -71,9 +72,12 @@ class HomePage extends StatelessWidget {
             builder: (context) => ChatPage(
               receiverEmail: userData["email"],
             ),
-          )
+          ),
         );
       },
     ); 
+    } else {
+      return const SizedBox.shrink();
+    }
   }
 }
