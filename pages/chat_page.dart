@@ -126,7 +126,7 @@ class ChatPage extends StatelessWidget {
             // send button
             Container(
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 208, 222, 17),
+                color: Color.fromARGB(255, 104, 95, 14),
                 shape: BoxShape.circle,
               ),
               margin: const EdgeInsets.only(right: 25),
