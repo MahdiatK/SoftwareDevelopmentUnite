@@ -4,12 +4,14 @@ class MyTextField extends StatefulWidget {
   final String hintText;
   final bool obscureText;
   final TextEditingController controller;
+  final FocusNode? focusNode;
 
   const MyTextField({
     super.key,
     required this.hintText,
     required this.obscureText,
     required this.controller,
+    this.focusNode,
   });
 
   @override
@@ -47,6 +49,7 @@ class _MyTextFieldState extends State<MyTextField> with SingleTickerProviderStat
         child: TextField(
           obscureText: widget.obscureText,
           controller: widget.controller,
+          focusNode: widget.focusNode,
           onTap: () {
             _controller.forward().then((_) => _controller.reverse());
           },
