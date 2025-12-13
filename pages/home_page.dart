@@ -3,7 +3,7 @@ import 'package:unity_main/components/my_drawer.dart';
 import 'package:unity_main/services/chat/chat_service.dart';
 import 'package:unity_main/components/user_tile.dart';
 import 'package:unity_main/pages/chat_page.dart';
-import 'package:unity_main/services/auth/auth_service.dart';
+import 'package:unity_main/services/auth new/auth_service.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
