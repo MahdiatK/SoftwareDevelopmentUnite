@@ -77,28 +77,56 @@ class ChatPage extends StatelessWidget {
     Widget _buildMessageItem(DocumentSnapshot doc) {
       Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
 
-      return Text(data["message"]);
+      //Is current user
+      bool isCurrentUser = data["senderID"] == _authService.currentUser!.uid;  //Checks if the senderID matches the current user's ID
+
+      //Align message to right if sender is current user, otherwise align to left
+      var alignment =
+      isCurrentUser ? Alignment.centerRight : Alignment.centerLeft;
+
+      return Container(
+        alignment: alignment,
+        child: Column(
+          crossAxisAlignment: 
+              isCurrentUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+          children: [
+            Text(data["message"]),
+          ],
+        ),
+        );
     }
 
     //build message input 
     Widget _buildUserInput() {
-      return Row(
-        children: [
-          // textfield should take up most of the space
-          Expanded(
-            child: MyTextField(
-              controller: _messageController,
-              hintText: "Enter your message",
-              obscureText: false,
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 50.0),
+        child: Row(
+          children: [
+            // textfield should take up most of the space
+            Expanded(
+              child: MyTextField(
+                controller: _messageController,
+                hintText: "Enter your message",
+                obscureText: false,
+              ),
             ),
-          ),
-
-          // send button
-          IconButton(
-            onPressed: sendMessage,
-            icon: const Icon(Icons.arrow_upward),
-          ),
-        ],
+        
+            // send button
+            Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 208, 222, 17),
+                shape: BoxShape.circle,
+              ),
+              margin: const EdgeInsets.only(right: 25),
+              child: IconButton(
+                onPressed: sendMessage,
+                icon: const Icon(Icons.arrow_upward,
+                color: Colors.white,
+                ),
+              ),
+            ),
+          ],
+        ),
       );
     }
   }
