@@ -17,7 +17,7 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 - [Reviewing Available Projects](#reviewing-available-projects)
 - [Reviewing Target Audiences](#reviewing-target-audiences)
 - [Overall Specification – Chat Application](#overall-specification--chat-application)
-- [Project Structure](#project_structure)
+- [Project Structure](#project-structure)
 - [System Requirements](#system-requirements)
 - [Game-Rules and Game-Mechanics Equivalent](#game-rules-and-game-mechanics-equivalent)
 - [Potential Project Risks](#potential-project-risks)
