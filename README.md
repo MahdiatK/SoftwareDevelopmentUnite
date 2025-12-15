@@ -27,6 +27,7 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 - [Basic UML-Style Flowcharts](#basic-uml-style-flowcharts)
 - [Establishing Game State](#establishing-game-state)
 - [System Architecture Overview](#system-architecture-overview)
+- [Testing](#testing)
 - [References](#references)
 
 ---
@@ -501,6 +502,11 @@ function createGroupChat(creatorID, memberList):
 - The system must support multiple active rooms  
 - Only text messages (and optional emojis)  
 - Must run efficiently on low-spec mobile devices  
+
+---
+
+## Testing
+Detailed tests and results conducted in development can be found in [Testing.md](./Testing.md)
 
 ---
 
