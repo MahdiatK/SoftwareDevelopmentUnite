@@ -34,6 +34,57 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 
 ## Project Structure
 
+### `lib/`
+Main application source directory.
+
+- **`auth/`**  
+  Legacy authentication folder (no longer used, kept for reference).
+
+- **`brightness/`**  
+  Handles app brightness and theme configuration.
+  - `brightness_provider.dart` – Manages light/dark theme state  
+  - `dark_mode.dart` – Dark theme setup  
+  - `light_mode.dart` – Light theme setup  
+
+- **`components/`**  
+  Reusable UI widgets used throughout the app.
+  - `chat_bubble.dart` – Displays chat messages  
+  - `my_button.dart` – Custom button widget  
+  - `my_drawer.dart` – Navigation drawer  
+  - `textfield.dart` – Custom text input  
+  - `user_tile.dart` – User list tile  
+
+- **`models/`**  
+  Data models.
+  - `message.dart` – Message structure (sender, text, timestamp)
+
+- **`pages/`**  
+  Main application screens.
+  - `chat_page.dart` – Chat interface  
+  - `home_page.dart` – Home screen after login  
+  - `login_page.dart` – Login screen  
+  - `register_page.dart` – Registration screen  
+  - `settings_page.dart` – App settings  
+
+- **`services/`**  
+  Business logic and external services.
+  - `auth_new/` – Active authentication system  
+    - `auth_gate.dart` – Auth state routing  
+    - `auth_service.dart` – Firebase auth logic  
+    - `login_or_register.dart` – Login/register switch  
+  - `chat/` – Chat backend logic  
+    - `chat_service.dart` – Message handling  
+
+- **`firebase_options.dart`**  
+  Auto-generated Firebase configuration.
+
+- **`main.dart`**  
+  Application entry point.
+
+---
+
+## Project Structure
+
 | Path | Description |
 |-----|------------|
 | `lib/` | Main application source directory |
