@@ -33,38 +33,47 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 ---
 
 ## Project Structure
-| Folder / File                   | Description                                                               |
-| ------------------------------- | ------------------------------------------------------------------------- |
-| **`lib/`**                      | Main application source directory containing all Dart code                |
-| **`lib/auth/`**                 | Legacy authentication folder (no longer used, kept for reference only)    |
-| **`lib/brightness/`**           | Manages application brightness and theme settings                         |
-| ├─ `brightness_provider.dart`   | State provider for switching between light and dark mode                  |
-| ├─ `dark_mode.dart`             | Dark theme configuration                                                  |
-| └─ `light_mode.dart`            | Light theme configuration                                                 |
-| **`lib/components/`**           | Reusable UI components shared across multiple pages                       |
-| ├─ `chat_bubble.dart`           | Displays individual chat messages                                         |
-| ├─ `my_button.dart`             | Custom reusable button widget                                             |
-| ├─ `my_drawer.dart`             | Navigation drawer for app-wide navigation                                 |
-| ├─ `textfield.dart`             | Custom text input field widget                                            |
-| └─ `user_tile.dart`             | Displays users in a list (e.g. chat participants)                         |
-| **`lib/models/`**               | Data models used throughout the application                               |
-| └─ `message.dart`               | Defines the message structure (sender, content, timestamp)                |
-| **`lib/pages/`**                | Main application screens (UI pages)                                       |
-| ├─ `chat_page.dart`             | Chat interface where messages are sent and received                       |
-| ├─ `home_page.dart`             | Home screen displayed after successful login                              |
-| ├─ `login_page.dart`            | User login screen                                                         |
-| ├─ `register_page.dart`         | User registration screen                                                  |
-| └─ `settings_page.dart`         | Settings page (theme preferences, user options)                           |
-| **`lib/services/`**             | Application logic and external service handlers                           |
-| **`lib/services/auth_new/`**    | Current authentication system (actively used)                             |
-| ├─ `auth_gate.dart`             | Controls access to pages based on authentication state                    |
-| ├─ `auth_service.dart`          | Handles Firebase authentication logic                                     |
-| └─ `login_or_register.dart`     | Switches between login and registration screens                           |
-| **`lib/services/chat/`**        | Chat-related backend logic                                                |
-| └─ `chat_service.dart`          | Manages sending, receiving, and storing messages                          |
-| **`lib/firebase_options.dart`** | Auto-generated Firebase configuration file                                |
-| **`lib/main.dart`**             | Application entry point (initialises app, theme, and authentication flow) |
 
+lib/
+├─ auth/                         # Old/legacy authentication folder (no longer used)
+│                                # Kept for reference only
+│
+├─ brightness/                   # Handles app brightness setting (light/dark mode)
+│  ├─ brightness_provider.dart   # State management for toggling brightness themes
+│  ├─ dark_mode.dart             # Dark theme configuration
+│  └─ light_mode.dart            # Light theme configuration
+│
+├─ components/                   # Reusable UI components used across the app
+│  ├─ chat_bubble.dart           # UI widget for displaying chat messages
+│  ├─ my_button.dart             # Custom reusable button widget
+│  ├─ my_drawer.dart             # Navigation drawer widget
+│  ├─ textfield.dart             # Custom text input field widget
+│  └─ user_tile.dart             # Widget for displaying users in a list
+│
+├─ models/                       # Data models used throughout the app
+│  └─ message.dart               # Message model (sender, text, timestamp, etc.)
+│
+├─ pages/                        # Main application screens (UI pages)
+│  ├─ chat_page.dart             # Chat screen where messages are sent/received
+│  ├─ home_page.dart             # Home screen after successful login
+│  ├─ login_page.dart            # User login screen
+│  ├─ register_page.dart         # User registration screen
+│  └─ settings_page.dart         # Settings screen (brightness themes, user options)
+│
+├─ services/                     # Application logic and external services
+│  ├─ auth_new/                  # Current authentication system (actively used)
+│  │  ├─ auth_gate.dart          # Controls access based on authentication state
+│  │  ├─ auth_service.dart       # Handles Firebase authentication logic
+│  │  └─ login_or_register.dart  # Switches between login and register screens
+│  │
+│  └─ chat/                      # Chat-related backend services
+│     └─ chat_service.dart       # Handles sending, receiving, and storing messages
+│
+├─ firebase_options.dart         # Firebase configuration (auto-generated)
+│                                # Links the app to the Firebase project
+│
+└─ main.dart                     # Application entry point
+                                 # Initializes app, theme, and authentication
 
 ---
 
