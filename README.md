@@ -34,6 +34,7 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 
 ## Project Structure
 
+```text
 lib/
 ├─ auth/                         # Old/legacy authentication folder (no longer used)
 │                                # Kept for reference only
@@ -74,6 +75,7 @@ lib/
 │
 └─ main.dart                     # Application entry point
                                  # Initializes app, theme, and authentication
+```
 
 ---
 
