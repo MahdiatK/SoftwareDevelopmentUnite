@@ -196,6 +196,11 @@ The project succeeds if:
 
 ---
 
+##Features
+Includes running app screenshots with the features listed
+
+---
+
 ## Project Structure
 
 ```text
