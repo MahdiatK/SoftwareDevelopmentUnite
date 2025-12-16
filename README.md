@@ -23,6 +23,7 @@ This project was developed as part of the software develpoment module assignment
 - [Reviewing Available Projects](#reviewing-available-projects)
 - [Reviewing Target Audiences](#reviewing-target-audiences)
 - [Overall Specification – Chat Application](#overall-specification--chat-application)
+- [Features](#features)
 - [Project Structure](#project-structure)
 - [System Requirements](#system-requirements)
 - [Game-Rules and Game-Mechanics Equivalent](#game-rules-and-game-mechanics-equivalent)
@@ -35,6 +36,7 @@ This project was developed as part of the software develpoment module assignment
 - [Establishing Game State](#establishing-game-state)
 - [System Architecture Overview](#system-architecture-overview)
 - [Testing](#testing)
+- [Further Developmenmt](#further-development)
 - [References](#references)
 
 ---
@@ -566,6 +568,11 @@ function createGroupChat(creatorID, memberList):
 
 ## Testing
 Detailed tests and results conducted in development can be found in [Testing.md](./Testing.md)
+
+---
+
+##Further Development
+For future development we aim to complete more of the features listed in teh read me making the application more appealing and usable.
 
 ---
 
