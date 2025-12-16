@@ -37,6 +37,8 @@ This project was developed as part of the software develpoment module assignment
 - [System Architecture Overview](#system-architecture-overview)
 - [Testing](#testing)
 - [Further Development](#further-development)
+- [Contribution To The Project](#contriubtion-to-the-project)
+- [Group Evaluation](#group-evaluation)
 - [References](#references)
 
 ---
