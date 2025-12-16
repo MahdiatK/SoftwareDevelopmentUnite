@@ -13,6 +13,12 @@ A mobile chat application built using Flutter and Firebase (Cloud Firestore).
 
 ---
 
+##Project Overview
+The unity chat app is a mobile friendly application that allows for real time messaging with friends and family. The app is devloped using flutter and firebase (cloud firestore) with a focus on simplicity, accessibility and reliable real time communication.
+This project was developed as part of the software develpoment module assignment 2 and includes full documentation covering requirements analysis, UI/UX design, system risks and testing.
+
+---
+
 ## Table of Contents
 - [Reviewing Available Projects](#reviewing-available-projects)
 - [Reviewing Target Audiences](#reviewing-target-audiences)
