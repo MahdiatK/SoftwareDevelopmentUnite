@@ -574,7 +574,7 @@ Detailed tests and results conducted in development can be found in [Testing.md]
 ---
 
 ## Further Development
-For future development we aim to complete more of the features listed in teh read me making the application more appealing and usable.
+For future development we aim to complete and continue developing more of the features listed in the read me making the application more appealing and usable.
 
 ---
 
