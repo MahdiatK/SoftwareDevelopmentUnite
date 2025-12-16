@@ -198,7 +198,7 @@ The project succeeds if:
 
 ---
 
-##Features
+## Features
 Includes running app screenshots with the features listed
 
 ---
