@@ -591,8 +591,7 @@ Sayf:
 - Added image logo to login page
 
 Mahdiat:
-....
-...
+
 
 --
 
