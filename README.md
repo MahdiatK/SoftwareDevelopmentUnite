@@ -576,6 +576,30 @@ For future development we aim to complete more of the features listed in teh rea
 
 ---
 
+## Contribution To The Project
+Daniel:
+...
+..
+
+Sayf:
+- Created Test Page on git
+- Created the App Logic Flowchart
+- Started the programming and created the corresponding files:
+- Coded the foundation (login page, light mode page, main file)
+- Added image logo to login page
+
+Mahdiat:
+....
+...
+
+--
+
+## Group Evaluation
+
+This was our first time working as a group together but it went very smoothly and everyone took a good portion of the workload, our communication was good as a team as we would message eachother in a unity groupchat. We was able to succesfully develop an app from mock-ups and all leaned on eachothers strengths in the group. Overall we all felt happy in our group and had fun developing the application together.
+
+--
+
 ## References
 
 To develop the app we chose to use Flutter framework (Dart) and Cloud Firestore (Firebase). The flutter framework is essential to build the mobile app’s interface and logic for both Android and iOS from a single codebase. Firestore is essential to store user data, messages, and real-time updates. Majority of our code is Dart with a small portion of it containing html for aesthetics
