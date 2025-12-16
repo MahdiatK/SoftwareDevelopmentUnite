@@ -36,7 +36,7 @@ This project was developed as part of the software develpoment module assignment
 - [Establishing Game State](#establishing-game-state)
 - [System Architecture Overview](#system-architecture-overview)
 - [Testing](#testing)
-- [Further Developmenmt](#further-development)
+- [Further Development](#further-development)
 - [References](#references)
 
 ---
