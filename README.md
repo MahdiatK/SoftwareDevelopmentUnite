@@ -250,6 +250,16 @@ lib/
 
 All pages are dynamically updated to match the selected light or dark theme, ensuring a consistent user experience across the application.
 
+**Profile Page**
+<img width="379" height="843" alt="profile 1" src="https://github.com/user-attachments/assets/87e37d74-74cd-4fc7-9285-1817ed983adb" />
+
+<img width="357" height="816" alt="profile 2" src="https://github.com/user-attachments/assets/02ea232d-cf97-4c5d-81f2-9fbb81110e60" />
+
+<img width="397" height="827" alt="profile 3" src="https://github.com/user-attachments/assets/44fa9d50-1273-4cd4-a831-06f5d134a058" />
+
+When you click on the icon in the top right, it brings you straight to the profile page seen in the second image, you can then update your photo and in real time it will change your image in the top right hand corner on the chat page.
+
+
 ---
 
 ### More Features Include:
