@@ -714,6 +714,28 @@ For future development we aim to complete and continue developing more of the fe
 
 ## Brief Contributions To The Project
 Daniel:
+- Review all available projects before deciding which to develop
+- Create an overall specification based on user and system requirements
+- Created mockups for the chat interface
+- Constructed storyboards
+- identify and rank potential risks
+- Agree your project’s requirements ensuring you can deliver them successfully.
+- Use basic pseudo code to help define, establish and quickly test high-level in-game functions, actions and logic
+- Created basic UML flowcharts to help plan, design and test game logic, interaction, mechanics and flow
+- Establish game state management (start, win, lose, draw) – confirm how the state could be monitored, detected or changed?
+- Created the register page
+- Created the login page
+- added read and sent message icons
+- added a drawer with settings logout and profile page
+- Made the profile page functional
+- Create a profile service page so theres a database for when users upload their photos to store
+- changed the size of the logo
+- changed the background colour for the register and login page
+- connected the dart code to firebase
+- crated the original data base where i created a test user to register and login into the app
+- did all thje controllers so users can login with email and password
+- There's more but i can't remember 
+
 ...
 ..
 
