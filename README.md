@@ -263,7 +263,7 @@ When you click on the icon in the top right, it brings you straight to the profi
 
 | Sent Message | Read Message |
 |----------|-----------|
-| <img width="280" height="450" alt="read tick grey" src="https://github.com/user-attachments/assets/9403132d-f4ac-4bab-b074-279c7500f670" /> | <img width="280" height="450" alt="read tick green" src="https://github.com/user-attachments/assets/d21371da-5f13-4678-80da-cbfb6b165517" /> |
+| <img width="280" height="600" alt="read tick grey" src="https://github.com/user-attachments/assets/9403132d-f4ac-4bab-b074-279c7500f670" /> | <img width="600" height="450" alt="read tick green" src="https://github.com/user-attachments/assets/d21371da-5f13-4678-80da-cbfb6b165517" /> |
 
 Once the user sends a message a grey tick appears below the message, once the message is read on the other end the tick for the user who sent the message turns green, vice versa.
 
