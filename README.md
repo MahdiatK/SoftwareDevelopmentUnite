@@ -716,7 +716,7 @@ For future development we aim to complete and continue developing more of the fe
 
 ---
 
-Daniel:
+### Daniel:
 - Review all available projects before deciding which to develop
 - Create an overall specification based on user and system requirements
 - Created mockups for the chat interface
@@ -741,7 +741,7 @@ Daniel:
 
 ---
 
-Sayf:
+### Sayf:
 - Created Test Page on git
 - Created settings and profile page mock-ups
 - Created the App Logic Flowchart
@@ -773,7 +773,7 @@ Completed parts of the read me for:
 
 ---
 
-Mahdiat:
+### Mahdiat:
 -
 -
 -
