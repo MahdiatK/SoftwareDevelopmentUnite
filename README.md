@@ -228,13 +228,10 @@ lib/
 ```
 
 ### Settings - Theme/Brightness Toggle
-Light mode (default) with brightness toggle:
 
-<img src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" width="300">
-
-Dark mode enabled via the toggle:
-
-<img src="https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b" width="300">
+| Light mode (default) with brightness toggle | Dark mode enabled via the toggle: |
+|----------|-----------|
+| <img src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" width="260"> | <img src="https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b" width="260"> |
 
 ### Home & Chat Pages Theme Comparison Example
 
