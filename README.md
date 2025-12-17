@@ -326,6 +326,41 @@ lib/
 
 ---
 
+## Installation & Setup
+
+# Prerequisities:
+- Flutter SDK,
+- VS Code (Flutter & Dart extensions),
+- Firebase account with Firestore enabled
+- Andriod emulator (used Andriod Studio) or physical device
+
+# Clone The Repository:
+
+```
+bash
+
+git clone https://github.com/MahdiatK/SoftwareDevelopmentUnite.git
+cd SoftwareDevelopmentUnite
+```
+
+# install dependencies
+
+```
+bash
+flutter pub get
+```
+
+# Run the app
+
+```
+bash
+flutter run
+```
+
+Firebase configuration files must be set up locally for authentication and Firestore to work correctly.
+
+---
+
 ### Human–Computer Interaction (HCI)
 - Minimal UI  
 - Message area centered  
