@@ -80,4 +80,25 @@ Stream<QuerySnapshot> getMessagesStream(String userID, otherUserID) {
       .orderBy("timestamp", descending: false)
       .snapshots();
  }
+
+// mark messages as read
+Future<void> markMessagesAsRead(String userID, String otherUserID) async {
+  List<String> ids = [userID, otherUserID];
+  ids.sort();
+  String chatRoomID = ids.join("_");
+
+  // Get all unread messages sent by the other user
+  final messagesSnapshot = await _firestore
+      .collection("ChatRooms")
+      .doc(chatRoomID)
+      .collection("Messages")
+      .where('senderID', isEqualTo: otherUserID)
+      .where('isRead', isEqualTo: false)
+      .get();
+
+  // Mark each message as read
+  for (var doc in messagesSnapshot.docs) {
+    await doc.reference.update({'isRead': true});
+  }
+}
 }
