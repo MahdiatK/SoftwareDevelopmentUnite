@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:unity_main/services/profile/profile_service.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -12,8 +13,45 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _bioController = TextEditingController();
+  final ProfileService _profileService = ProfileService();
   File? _profileImage;
+  String? _profileImageUrl;
   final ImagePicker _picker = ImagePicker();
+  bool _isLoading = true;
+  bool _isSaving = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProfile();
+  }
+
+  Future<void> _loadProfile() async {
+    try {
+      final profileData = await _profileService.getProfile();
+      if (profileData != null) {
+        setState(() {
+          _nameController.text = profileData['name'] ?? '';
+          _bioController.text = profileData['bio'] ?? '';
+          _profileImageUrl = profileData['profileImageUrl'] ?? '';
+          _isLoading = false;
+        });
+      } else {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      setState(() {
+        _isLoading = false;
+      });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading profile: $e')),
+        );
+      }
+    }
+  }
 
   @override
   void dispose() {
@@ -37,18 +75,75 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  void _saveProfile() {
-    // TODO: Implement save functionality
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Profile saved successfully!'),
-        duration: Duration(seconds: 2),
-      ),
-    );
+  Future<void> _saveProfile() async {
+    if (_isSaving) return;
+
+    setState(() {
+      _isSaving = true;
+    });
+
+    try {
+      String? imageUrl = _profileImageUrl;
+
+      // Upload new image if selected
+      if (_profileImage != null) {
+        imageUrl = await _profileService.uploadProfileImage(_profileImage!);
+      }
+
+      // Save profile data
+      await _profileService.saveProfile(
+        name: _nameController.text,
+        bio: _bioController.text,
+        profileImageUrl: imageUrl,
+      );
+
+      setState(() {
+        _profileImageUrl = imageUrl;
+        _profileImage = null;
+        _isSaving = false;
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Profile saved successfully!'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    } catch (e) {
+      setState(() {
+        _isSaving = false;
+      });
+      
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error saving profile: $e'),
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_isLoading) {
+      return Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        appBar: AppBar(
+          title: const Text("Profile"),
+          backgroundColor: Colors.transparent,
+          foregroundColor: Colors.grey,
+          elevation: 0,
+        ),
+        body: const Center(
+          child: CircularProgressIndicator(),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
@@ -82,8 +177,10 @@ class _ProfilePageState extends State<ProfilePage> {
                       backgroundColor: Theme.of(context).colorScheme.secondary,
                       backgroundImage: _profileImage != null
                           ? FileImage(_profileImage!)
-                          : null,
-                      child: _profileImage == null
+                          : (_profileImageUrl != null && _profileImageUrl!.isNotEmpty)
+                              ? NetworkImage(_profileImageUrl!) as ImageProvider
+                              : null,
+                      child: (_profileImage == null && (_profileImageUrl == null || _profileImageUrl!.isEmpty))
                           ? Icon(
                               Icons.person,
                               size: 70,
@@ -175,23 +272,34 @@ class _ProfilePageState extends State<ProfilePage> {
 
               // Save Button
               GestureDetector(
-                onTap: _saveProfile,
+                onTap: _isSaving ? null : _saveProfile,
                 child: Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary,
+                    color: _isSaving 
+                        ? Theme.of(context).colorScheme.primary.withOpacity(0.5)
+                        : Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: const Center(
-                    child: Text(
-                      'Save Profile',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                  child: Center(
+                    child: _isSaving
+                        ? const SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2,
+                            ),
+                          )
+                        : const Text(
+                            'Save Profile',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                   ),
                 ),
               ),
@@ -202,3 +310,4 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
