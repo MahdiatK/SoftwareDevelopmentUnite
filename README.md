@@ -26,6 +26,7 @@ This project was developed as part of the software develpoment module assignment
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [System Requirements](#system-requirements)
+- [Installation & Setup](#installation-&-setup)
 - [Game-Rules and Game-Mechanics Equivalent](#game-rules-and-game-mechanics-equivalent)
 - [Potential Project Risks](#potential-project-risks)
 - [Application Functions](#application-functions)
@@ -328,13 +329,13 @@ lib/
 
 ## Installation & Setup
 
-# Prerequisities:
+### Prerequisities:
 - Flutter SDK,
 - VS Code (Flutter & Dart extensions),
 - Firebase account with Firestore enabled
 - Andriod emulator (used Andriod Studio) or physical device
 
-# Clone The Repository:
+### Clone The Repository:
 
 ```
 bash
@@ -343,14 +344,14 @@ git clone https://github.com/MahdiatK/SoftwareDevelopmentUnite.git
 cd SoftwareDevelopmentUnite
 ```
 
-# install dependencies
+### install dependencies
 
 ```
 bash
 flutter pub get
 ```
 
-# Run the app
+### Run the app
 
 ```
 bash
