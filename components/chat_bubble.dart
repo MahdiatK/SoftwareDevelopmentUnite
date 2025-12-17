@@ -37,7 +37,7 @@ class ChatBubble extends StatelessWidget {
                   Icon(
                     Icons.done_all,
                     size: 14,
-                    color: isRead ? Colors.green.shade400 : Colors.grey.shade300,
+                    color: isRead ? const Color(0xFF00FF00) : Colors.grey.shade300,
                   ),
                 ],
               ),
