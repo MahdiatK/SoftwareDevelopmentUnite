@@ -589,6 +589,16 @@ Sayf:
 - Started the programming and created the corresponding files:
 - Coded the foundation (login page, light mode page, main file)
 - Added image logo to login page
+- Regularly Updated the read me and added new sections
+- Created the project structure
+- Developed and refined the unity chat UI
+- Colour and styling changed for the chat bubbles
+- Built theme/brightness logic
+- Implemented light/dark mode feature
+- Improved and fixed various UI components and providers
+- Formatted read me making it more appealing and appropriate
+- Completed tests and created test plan in [Testing.md](./Testing.md)
+- added references and further development
 
 Mahdiat:
 
