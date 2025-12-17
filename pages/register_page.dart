@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:unity_main/services/auth new/auth_service.dart';
+import 'package:unity_main/services/auth/auth_service.dart';
 import 'package:unity_main/components/textfield.dart';
 import 'package:unity_main/components/my_button.dart';
+
 
 class RegisterPage extends StatelessWidget {
    //Username and pw controllers
@@ -15,23 +16,34 @@ class RegisterPage extends StatelessWidget {
   RegisterPage({super.key, required this.onTap});
 
   //Register method
-  void register(BuildContext context) {
+  void register(BuildContext context) async {
     // get auth service
     final _auth = AuthService();
 
     // Passwords match -> create user
     if (_pwController.text == _confirmpwController.text) {
       try {
-        _auth.registerWithEmailPassword(
+        await _auth.registerWithEmailPassword(
           _emailController.text, 
           _pwController.text,
         );
       } catch (e) {
+        // Parse error message
+        String errorMessage = e.toString();
+        
+        if (errorMessage.contains('email-already-in-use')) {
+          errorMessage = 'This email is already registered. Please use a different email or try logging in.';
+        } else if (errorMessage.contains('weak-password')) {
+          errorMessage = 'Password is too weak. Please use a stronger password.';
+        } else if (errorMessage.contains('invalid-email')) {
+          errorMessage = 'Invalid email address. Please enter a valid email.';
+        }
+        
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: const Text('Login Failed'),
-            content: Text(e.toString()),
+            title: const Text('Registration Failed'),
+            content: Text(errorMessage),
           ),
         );
       }
