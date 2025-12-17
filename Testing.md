@@ -69,3 +69,6 @@ To ensure full functionality:
 ---
 
 ## Test Plan
+
+| Home Page | Chat Page |
+|----------|-----------|
