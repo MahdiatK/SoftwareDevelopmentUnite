@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:unity_main/components/chat_bubble.dart';
 import 'package:unity_main/components/textfield.dart';
-import 'package:unity_main/services/auth new/auth_service.dart';
+import 'package:unity_main/services/auth/auth_service.dart';
 import 'package:unity_main/services/chat/chat_service.dart';
 
 class ChatPage extends StatefulWidget {
@@ -111,6 +111,10 @@ class _ChatPageState extends State<ChatPage> {
   // build messages list
   Widget _buildMessagesList() {
     String SenderID = _authService.currentUser!.uid;
+    
+    // Mark messages as read when viewing
+    _chatService.markMessagesAsRead(SenderID, widget.receiverID);
+    
     return StreamBuilder(
       stream: _chatService.getMessagesStream(SenderID, widget.receiverID),
       builder: (context, snapshot) {
@@ -154,6 +158,7 @@ class _ChatPageState extends State<ChatPage> {
             ChatBubble(
               message: data["message"],
               isCurrentUser: isCurrentUser,
+              isRead: data["isRead"] ?? false,
               )
           ],
         ),
@@ -178,8 +183,8 @@ class _ChatPageState extends State<ChatPage> {
         
             // send button
             Container(
-              decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 104, 95, 14),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade700,
                 shape: BoxShape.circle,
               ),
               margin: const EdgeInsets.only(right: 25),
