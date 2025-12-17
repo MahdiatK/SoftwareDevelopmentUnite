@@ -3,7 +3,8 @@ import 'package:unity_main/components/my_drawer.dart';
 import 'package:unity_main/services/chat/chat_service.dart';
 import 'package:unity_main/components/user_tile.dart';
 import 'package:unity_main/pages/chat_page.dart';
-import 'package:unity_main/services/auth new/auth_service.dart';
+import 'package:unity_main/pages/profile_page.dart';
+import 'package:unity_main/services/auth/auth_service.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -19,6 +20,40 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title:const Text("Home"),
         centerTitle: true,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 15.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ProfilePage(),
+                  ),
+                );
+              },
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.grey,
+                    width: 2,
+                  ),
+                ),
+                child: const CircleAvatar(
+                  backgroundColor: Color(0xFF2a2a2a),
+                  child: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
         
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
