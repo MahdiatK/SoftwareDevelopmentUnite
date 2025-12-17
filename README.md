@@ -767,6 +767,10 @@ This was our first time working as a group together but it went very smoothly an
 
 ---
 
+## Powerpoint
+
+https://herts365-my.sharepoint.com/:p:/g/personal/da24aby_herts_ac_uk/IQB5W6PGYP_YSpxHnU_OEbD4Afsl47PPJDxTG5aaWzCyoyw?e=rvCiF7
+
 ## References
 
 To develop the app we chose to use Flutter framework (Dart) and Cloud Firestore (Firebase). The flutter framework is essential to build the mobile app’s interface and logic for both Android and iOS from a single codebase. Firestore is essential to store user data, messages, and real-time updates. Majority of our code is Dart with a small portion of it containing html for aesthetics
