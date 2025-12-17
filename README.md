@@ -201,15 +201,61 @@ The project succeeds if:
 ---
 
 ## Features
-Includes running app screenshots with the some of the apps features listed
+---
 
-Homepage login and register feature:
+Includes running app screenshots with some of the apps features listed
 
-Light/Dark mode feature:
+---
+
+### Homepage Authentication (login and register) feature:
+
+Users can securely log in or register using the homepage authentication system, if they are not alreadly logged in to the system they can register an account with their email.
+
+<img src="LOGIN_IMAGE_URL" width="280"> <img src="REGISTER_IMAGE_URL" width="280">
+
+---
+
+### Light/Dark mode feature:
+
 - First identified in mock-ups
 - Allows users to switch from light and dark mode through a brightness button on the settings page
 - created the theme feature using the following files and folders:
-<img width="233" height="107" alt="image" src="https://github.com/user-attachments/assets/bf574ceb-50f5-4c42-a65d-d0a4c87a7b1d" />
+
+```
+lib/
+└─ brightness/
+├─ brightness_provider.dart
+├─ dark_mode.dart
+└─ light_mode.dart
+```
+
+### Settings - Theme/Brightness Toggle
+Light mode (default) with brightness toggle:
+
+<img src="[SETTINGS_LIGHT_URL](https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620)" width="300">
+
+Dark mode enabled via the toggle:
+
+<img src="SETTINGS_DARK_URL(https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b)" width="300">
+
+### Home & Chat Pages Theme Comparison Example
+
+**Dark Mode**
+
+| Home Page | Chat Page |
+|----------|-----------|
+| <img src="HOME_DARK_URL(https://github.com/user-attachments/assets/91bbd5e8-9a40-4cf3-9b2a-59cc741895fb)" width="260"> | <img src="[CHAT_DARK_UR](https://github.com/user-attachments/assets/12631580-4549-49a7-9984-83bcfa69b94e)L" width="260"> |
+
+**Light Mode**
+
+| Home Page | Chat Page |
+|----------|-----------|
+| <img src="[HOME_LIGHT_URL](https://github.com/user-attachments/assets/c8999141-2137-4643-9565-e280630fa94b)" width="260"> | <img src="[CHAT_LIGHT_URL](https://github.com/user-attachments/assets/8ce9280b-0dcc-4f42-b79a-d29968f49254)" width="260"> |
+
+All pages are dynamically updated to match the selected light or dark theme, ensuring a consistent user experience across the application.
+
+---
+
 - A screenshot of the setting page showing the brightness button:
 <img width="456" height="1042" alt="image" src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" />
 - After switching to dark mode:
@@ -224,7 +270,7 @@ Light/Dark mode feature:
 
 ## Project Structure
 
-```text
+```
 lib/
 ├─ auth/                         # Old/legacy authentication folder (no longer used)
 │                                # Kept for reference only
