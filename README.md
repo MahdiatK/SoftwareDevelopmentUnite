@@ -755,7 +755,19 @@ Sayf:
 - Improved and fixed various UI components and providers
 - Formatted read me making it more appealing and appropriate
 - Completed tests and created test plan in [Testing.md](./Testing.md)
-- added references and further development
+
+Completed parts of the read me for:
+- Title, Logo and description,
+- Project Overview,
+- Table Of Contents,
+- 3 of the Features Subheadings,
+- Project Structure,
+- Installation & Setup,
+- Logo Link,
+- App Logic Flowchart,
+- Further Development,
+- Group Evaluation,
+- References
 
 Mahdiat:
 
