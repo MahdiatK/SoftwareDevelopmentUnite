@@ -5,6 +5,7 @@ import 'package:unity_main/components/user_tile.dart';
 import 'package:unity_main/pages/chat_page.dart';
 import 'package:unity_main/pages/profile_page.dart';
 import 'package:unity_main/services/auth/auth_service.dart';
+import 'package:unity_main/services/profile/profile_service.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
   // chat and auth service
   final ChatService _chatService = ChatService();
   final AuthService _authService = AuthService();
+  final ProfileService _profileService = ProfileService();
 
   @override
   Widget build(BuildContext context) {
@@ -32,24 +34,41 @@ class HomePage extends StatelessWidget {
                   ),
                 );
               },
-              child: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: Colors.grey,
-                    width: 2,
-                  ),
-                ),
-                child: const CircleAvatar(
-                  backgroundColor: Color(0xFF2a2a2a),
-                  child: Icon(
-                    Icons.person,
-                    color: Colors.white,
-                    size: 24,
-                  ),
-                ),
+              child: StreamBuilder(
+                stream: _profileService.profileStream(),
+                builder: (context, snapshot) {
+                  String? profileImageUrl;
+                  
+                  if (snapshot.hasData && snapshot.data!.exists) {
+                    final data = snapshot.data!.data() as Map<String, dynamic>?;
+                    profileImageUrl = data?['profileImageUrl'];
+                  }
+
+                  return Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    child: CircleAvatar(
+                      backgroundColor: const Color(0xFF2a2a2a),
+                      backgroundImage: (profileImageUrl != null && profileImageUrl.isNotEmpty)
+                          ? NetworkImage(profileImageUrl)
+                          : null,
+                      child: (profileImageUrl == null || profileImageUrl.isEmpty)
+                          ? const Icon(
+                              Icons.person,
+                              color: Colors.white,
+                              size: 24,
+                            )
+                          : null,
+                    ),
+                  );
+                },
               ),
             ),
           ),
