@@ -201,14 +201,24 @@ The project succeeds if:
 ---
 
 ## Features
-Includes running app screenshots with the features listed
+Includes running app screenshots with the some of the apps features listed
+
+Homepage login and register feature:
 
 Light/Dark mode feature:
 - First identified in mock-ups
 - Allows users to switch from light and dark mode through a brightness button on the settings page
-- created the main feature using the following files and folders:
+- created the theme feature using the following files and folders:
 <img width="233" height="107" alt="image" src="https://github.com/user-attachments/assets/bf574ceb-50f5-4c42-a65d-d0a4c87a7b1d" />
-
+- A screenshot of the setting page showing the brightness button:
+<img width="456" height="1042" alt="image" src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" />
+- After switching to dark mode:
+<img width="454" height="1029" alt="image" src="https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b" />
+- Home and chat page in dark mode:
+<img width="451" height="596" alt="image" src="https://github.com/user-attachments/assets/91bbd5e8-9a40-4cf3-9b2a-59cc741895fb" />, <img width="447" height="623" alt="image" src="https://github.com/user-attachments/assets/12631580-4549-49a7-9984-83bcfa69b94e" />
+- Home and chat page in light mode:
+<img width="454" height="614" alt="image" src="https://github.com/user-attachments/assets/c8999141-2137-4643-9565-e280630fa94b" />, <img width="448" height="628" alt="image" src="https://github.com/user-attachments/assets/8ce9280b-0dcc-4f42-b79a-d29968f49254" />
+- All of the pages are also updated to fit the light and dark mode themes
 
 ---
 
