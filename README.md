@@ -209,11 +209,11 @@ Includes running app screenshots with some of the apps features listed
 
 Users can securely log in or register using the homepage authentication system, if they are not alreadly logged in to the system they can register an account with their email.
 
-<img src="https://github.com/user-attachments/assets/6e956d8e-8e02-4eff-a3ea-4f16d225b783" width="280"> <img src="REGISTER_IMAGE_URL" width="280">
+<img src="https://github.com/user-attachments/assets/6e956d8e-8e02-4eff-a3ea-4f16d225b783" width="280"> <img src="https://github.com/user-attachments/assets/4137280f-cb74-40b6-8228-76d05a5ff2fc" width="280">
 
 ---
 
-### 🌗 Light/Dark mode feature:
+### Light/Dark mode feature:
 
 - First identified in mock-ups
 - Allows users to switch from light and dark mode through a brightness button on the settings page
@@ -227,13 +227,13 @@ lib/
 └─ light_mode.dart
 ```
 
-### Settings - Theme/Brightness Toggle
+### Settings - Theme/Brightness Toggle:
 
 | Light mode (default) with brightness toggle | Dark mode enabled via the toggle: |
 |----------|-----------|
 | <img src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" width="260"> | <img src="https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b" width="260"> |
 
-### Home & Chat Pages Theme Comparison Example
+### Home & Chat Pages Theme Comparison Example:
 
 **Dark Mode**
 
