@@ -209,7 +209,7 @@ Includes running app screenshots with some of the apps features listed
 
 Users can securely log in or register using the homepage authentication system, if they are not alreadly logged in to the system they can register an account with their email.
 
-<img src="LOGIN_IMAGE_URL" width="280"> <img src="REGISTER_IMAGE_URL" width="280">
+<img src="https://github.com/user-attachments/assets/6e956d8e-8e02-4eff-a3ea-4f16d225b783" width="280"> <img src="REGISTER_IMAGE_URL" width="280">
 
 ---
 
