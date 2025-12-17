@@ -251,6 +251,16 @@ All pages are dynamically updated to match the selected light or dark theme, ens
 
 ---
 
+### More Features Include:
+- Chat rooms,
+- Real-time messages,
+- Message history,
+- Scrolldown wheel,
+- After a text is submitted the app scrolls down to the latest text
+- Mobile-friendly UI
+
+---
+
 ## Project Structure
 
 ```
