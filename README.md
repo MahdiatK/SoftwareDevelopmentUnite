@@ -203,6 +203,13 @@ The project succeeds if:
 ## Features
 Includes running app screenshots with the features listed
 
+Light/Dark mode feature:
+- First identified in mock-ups
+- Allows users to switch from light and dark mode through a brightness button on the settings page
+- created the main feature using the following files and folders:
+<img width="233" height="107" alt="image" src="https://github.com/user-attachments/assets/bf574ceb-50f5-4c42-a65d-d0a4c87a7b1d" />
+
+
 ---
 
 ## Project Structure
