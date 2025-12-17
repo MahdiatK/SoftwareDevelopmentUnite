@@ -722,7 +722,7 @@ Mahdiat:
 
 ## Group Evaluation
 
-This was our first time working as a group together but it went very smoothly and everyone took a good portion of the workload, our communication was good as a team as we would message eachother in a unity groupchat. We was able to succesfully develop an app from mock-ups and all leaned on eachothers strengths in the group. Overall we all felt happy in our group and had fun developing the application together.
+This was our first time working as a group together but it went very smoothly and everyone took a good portion of the workload, our communication was good as a team as we would message eachother in a unity groupchat. We was able to succesfully develop an app from mock-ups and all leaned on eachothers strengths in the group. We was able to complete all of the acceptance criteria we made for the application except for the 100+ user as we didnt have the facilities or time to test this data. Overall we all worked qwll together in our group and had fun developing the Unity application.
 
 --
 
