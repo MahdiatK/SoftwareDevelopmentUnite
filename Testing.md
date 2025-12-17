@@ -70,5 +70,9 @@ To ensure full functionality:
 
 ## Test Plan
 
-| Home Page | Chat Page |
+| 1-5 | 6-10 |
 |----------|-----------|
+| <img width="638" height="727" alt="no 1 test plan" src="https://github.com/user-attachments/assets/5bf88fce-dfea-42fa-98eb-0f63b533920a" /> | <img width="513" height="734" alt="no2 test plan" src="https://github.com/user-attachments/assets/da23ec0b-b319-44ca-98aa-1aec3399746d" /> |
+
+
+
