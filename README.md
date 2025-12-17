@@ -692,7 +692,7 @@ For future development we aim to complete and continue developing more of the fe
 
 ---
 
-## Contribution To The Project
+## Brief Contributions To The Project
 Daniel:
 ...
 ..
