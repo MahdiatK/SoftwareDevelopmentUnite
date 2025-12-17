@@ -760,7 +760,7 @@ Completed parts of the read me for:
 - Title, Logo and description,
 - Project Overview,
 - Table Of Contents,
-- 3 of the Features Subheadings,
+- Features,
 - Project Structure,
 - Installation & Setup,
 - Logo Link,
