@@ -713,6 +713,9 @@ For future development we aim to complete and continue developing more of the fe
 ---
 
 ## Brief Contributions To The Project
+
+---
+
 Daniel:
 - Review all available projects before deciding which to develop
 - Create an overall specification based on user and system requirements
@@ -736,8 +739,7 @@ Daniel:
 - did all thje controllers so users can login with email and password
 - There's more but i can't remember 
 
-...
-..
+---
 
 Sayf:
 - Created Test Page on git
@@ -769,7 +771,12 @@ Completed parts of the read me for:
 - Group Evaluation,
 - References
 
+---
+
 Mahdiat:
+-
+-
+-
 
 ---
 
