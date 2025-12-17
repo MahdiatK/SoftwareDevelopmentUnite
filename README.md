@@ -201,13 +201,11 @@ The project succeeds if:
 ---
 
 ## Features
----
-
 Includes running app screenshots with some of the apps features listed
 
 ---
 
-### Homepage Authentication (login and register) feature:
+### Homepage Authentication 🔐 (login & register) feature:
 
 Users can securely log in or register using the homepage authentication system, if they are not alreadly logged in to the system they can register an account with their email.
 
@@ -215,7 +213,7 @@ Users can securely log in or register using the homepage authentication system, 
 
 ---
 
-### Light/Dark mode feature:
+### 🌗 Light/Dark mode feature:
 
 - First identified in mock-ups
 - Allows users to switch from light and dark mode through a brightness button on the settings page
@@ -232,11 +230,11 @@ lib/
 ### Settings - Theme/Brightness Toggle
 Light mode (default) with brightness toggle:
 
-<img src="[SETTINGS_LIGHT_URL](https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620)" width="300">
+<img src="https://github.com/user-attachments/assets/d6ecb894-6fe1-42ae-905e-57cead753620" width="300">
 
 Dark mode enabled via the toggle:
 
-<img src="SETTINGS_DARK_URL(https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b)" width="300">
+<img src="https://github.com/user-attachments/assets/e6c26cc4-c4ea-4ad1-8a62-da4fc7590e1b" width="300">
 
 ### Home & Chat Pages Theme Comparison Example
 
@@ -244,13 +242,13 @@ Dark mode enabled via the toggle:
 
 | Home Page | Chat Page |
 |----------|-----------|
-| <img src="HOME_DARK_URL(https://github.com/user-attachments/assets/91bbd5e8-9a40-4cf3-9b2a-59cc741895fb)" width="260"> | <img src="[CHAT_DARK_UR](https://github.com/user-attachments/assets/12631580-4549-49a7-9984-83bcfa69b94e)L" width="260"> |
+| <img src="https://github.com/user-attachments/assets/91bbd5e8-9a40-4cf3-9b2a-59cc741895fb" width="260"> | <img src="https://github.com/user-attachments/assets/12631580-4549-49a7-9984-83bcfa69b94e" width="260"> |
 
 **Light Mode**
 
 | Home Page | Chat Page |
 |----------|-----------|
-| <img src="[HOME_LIGHT_URL](https://github.com/user-attachments/assets/c8999141-2137-4643-9565-e280630fa94b)" width="260"> | <img src="[CHAT_LIGHT_URL](https://github.com/user-attachments/assets/8ce9280b-0dcc-4f42-b79a-d29968f49254)" width="260"> |
+| <img src="https://github.com/user-attachments/assets/c8999141-2137-4643-9565-e280630fa94b" width="260"> | <img src="https://github.com/user-attachments/assets/8ce9280b-0dcc-4f42-b79a-d29968f49254" width="260"> |
 
 All pages are dynamically updated to match the selected light or dark theme, ensuring a consistent user experience across the application.
 
