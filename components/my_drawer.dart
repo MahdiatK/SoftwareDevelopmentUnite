@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unity_main/pages/settings_page.dart';
-import 'package:unity_main/services/auth new/auth_service.dart';
+import 'package:unity_main/pages/profile_page.dart';
+import 'package:unity_main/services/auth/auth_service.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -15,7 +16,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: Theme.of(context).colorScheme.background,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -24,14 +25,13 @@ class MyDrawer extends StatelessWidget {
               //logo
               DrawerHeader(
               child: Center(
-                child: Image.network(
-                  'https://i.postimg.cc/GtXyJgkf/Unity-Logo.png',
-                  height: 100,
-                  fit: BoxFit.contain,
+                child:Icon(
+                  Icons.message, 
+                  color: Theme.of(context).colorScheme.primary,
+                  size: 40,
             ),
           ),
-        ),
-
+       ),
 
           //home list tile
           Padding(
@@ -60,6 +60,26 @@ class MyDrawer extends StatelessWidget {
                   context, 
                   MaterialPageRoute(
                      builder: (context) => SettingsPage(),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          //profile list tile
+          Padding(
+            padding: const EdgeInsets.only(left: 25.0),
+            child: ListTile(
+              title: const Text(" P R O F I L E"),
+              leading: const Icon(Icons.person),
+              onTap: () {
+                Navigator.pop(context);
+
+                // navigate to profile page
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                     builder: (context) => ProfilePage(),
                   ),
                 );
               },
