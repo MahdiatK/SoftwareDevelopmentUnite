@@ -585,6 +585,7 @@ Daniel:
 
 Sayf:
 - Created Test Page on git
+- Created settings and profile page mock-ups
 - Created the App Logic Flowchart
 - Started the programming and created the corresponding files:
 - Coded the foundation (login page, light mode page, main file)
